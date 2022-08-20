@@ -4,6 +4,8 @@ body {
   background: #f7f7f9;
 }
 
+
+
 .none {
   list-style: none;
 }
@@ -213,9 +215,30 @@ li:nth-child(1) {
   margin-bottom: 60px;
 }
 
-button:hover {
-  background-color: lightgray;
+button:enabled {
+  color: #6070FF;
+  background: #FFFFFF;
+  border: 1px solid #7F8CFF;
 }
+
+button:hover{
+  background: #6070FF;
+  color: #FFFFFF;
+}
+
+button:disabled{
+  color: #5E6C84;
+  background: #E5E5E5;
+  border: 1px solid #5E6C84;
+
+}
+
+button:active{
+  background: #2230D2;
+  color: #FFFFFF;
+}
+
+
 
 .aboutus__ul {
   display: flex;
@@ -232,6 +255,7 @@ button:hover {
 }
 
 .aboutmore__h1 {
+  padding: 21px 0;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -244,6 +268,10 @@ button:hover {
   justify-content: space-between;
 }
 
+.flex > img {
+  padding-right:30px;
+}
+
 .flex2 {
   display: flex;
   flex-direction: row;
@@ -252,4 +280,8 @@ button:hover {
   gap: 16px;
   background: #f7f7f9;
   border-radius: 8px;
+}
+
+.flex2 > img {
+  padding-left: 12px;
 }
