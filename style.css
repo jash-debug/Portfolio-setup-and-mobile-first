@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body{
-  background: #F7F7F9;
+body {
+  background: #f7f7f9;
+}
+
+.none {
+  list-style: none;
 }
 
 * {
@@ -19,7 +23,7 @@ body{
 /* Header Section */
 
 #header {
-  background-color: #FFFFFF;
+  background-color: #fff;
   padding: 0 24px;
 }
 
@@ -40,16 +44,15 @@ body{
 
 /* hero section */
 
-
-#hero{
-  background-color: #FFFFFF;
+#hero {
+  background-color: #fff;
   border-radius: 0 0 0 40px;
   padding: 0 24px;
   background-image: url(images/hero_bg.svg);
-  background-size:cover;
+  background-size: cover;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -57,7 +60,8 @@ body{
   justify-content: center;
 }
 
-.hero__heading, .aboutus__heading {
+.hero__heading,
+.aboutus__heading {
   width: 80%;
   font-weight: 700;
   font-size: 40px;
@@ -65,14 +69,16 @@ body{
   color: #172b4d;
 }
 
-.hero__desc, .aboutus__desc{
+.hero__desc,
+.aboutus__desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
 
-.hero__subtitle, .aboutus__subtitle {
+.hero__subtitle,
+.aboutus__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -80,48 +86,47 @@ body{
   text-decoration: none;
 }
 
-.hero__social, .aboutus__social{
+.hero__social,
+.aboutus__social {
   display: flex;
   flex-direction: row;
   gap: 20px;
   list-style: none;
 }
 
-
-
 /* projects */
 
-#project{
+#project {
   margin: 114px  0;
   gap: 88px;
   display: grid;
-  grid-template-columns: repeat(autofit,minmax(327px,1fr));
+  grid-template-columns: repeat(autofit, minmax(327px, 1fr));
   padding: 0 24px;
 }
 
 .project {
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 16px;
-gap: 12px;
-background: #FFFFFF;
-border: 1px solid #DFE1E6;
-border-radius: 16px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
 }
 
-.project img{
+.project img {
   max-width: 100%;
 }
 
 .project__heading {
   font-weight: 700;
-font-size: 32px;
-line-height: 44px;
-color: #172B4D;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
 }
 
-.project__path{
+.project__path {
   display: flex;
   flex-direction: row;
   font-weight: 600;
@@ -130,26 +135,25 @@ color: #172B4D;
   gap: 24px;
 }
 
-.project__path__name{
+.project__path__name {
   font-weight: 600;
-font-size: 13px;
-line-height: 16px;
-color: #344563;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
 }
 
-.project__path__type{
+.project__path__type {
   font-weight: 600;
-font-size: 13px;
-line-height: 16px;
-color: #7A869A;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
 }
 
 .project__desc {
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #344563;
-
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .project__language {
@@ -159,91 +163,86 @@ color: #344563;
   gap: 8px;
 }
 
-
-.project__language >li {
-font-weight: 500;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.03em;
-color: #6070FF;
-padding: 4px 12px;
-background: #EBEBFF;
-border-radius: 8px;
+.project__language > li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
 }
 
 li:nth-child(1) {
-  list-style-type: none; 
+  list-style-type: none;
 }
 
-.project__button,.aboutus__button{
-padding: 16px;
-gap: 12px;
-background: #FFFFFF;
-border: 1px solid #DFE1E6;
-border-radius: 16px;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #396DF2;
+.project__button,
+.aboutus__button {
+  padding: 16px;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
 }
-
 
 /* aboutus */
 
-#aboutus{
+#aboutus {
   margin-bottom: 138px;
   padding: 134px 24px;
-  border-radius: 0 40px 0 0 ;
-  background-color: #FFFFFF;
+  border-radius: 0 40px 0 0;
+  background-color: #fff;
 }
 
-.aboutus,.about_more{
+.aboutus,
+.about_more {
   display: flex;
   flex-direction: column;
   gap: 12px;
   justify-content: center;
 }
 
-
-
-.aboutus__button{
+.aboutus__button {
   margin-bottom: 60px;
 }
 
-button:hover{
-  background-color: lightgray ;
+button:hover {
+  background-color: lightgray;
 }
 
-.aboutus__ul{
+.aboutus__ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
   justify-content: center;
 }
 
-
-.aboutus__h1{
+.aboutus__h1 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;  
-  color: #000000;
+  line-height: 24px;
+  color: #000;
 }
 
-.aboutmore__h1{
+.aboutmore__h1 {
   font-weight: 500;
-font-size: 15px;
-line-height: 20px;
-color: #253858;
-
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
 }
 
 .flex {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 
 .flex2 {
   display: flex;
@@ -251,8 +250,6 @@ color: #253858;
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
-background: #F7F7F9;
-border-radius: 8px;
-
- }
-
+  background: #f7f7f9;
+  border-radius: 8px;
+}
