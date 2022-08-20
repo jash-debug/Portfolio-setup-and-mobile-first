@@ -187,3 +187,72 @@ line-height: 24px;
 letter-spacing: 0.03em;
 color: #396DF2;
 }
+
+
+/* aboutus */
+
+#aboutus{
+  margin-bottom: 138px;
+  padding: 134px 24px;
+  border-radius: 0 40px 0 0 ;
+  background-color: #FFFFFF;
+}
+
+.aboutus,.about_more{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+
+
+.aboutus__button{
+  margin-bottom: 60px;
+}
+
+button:hover{
+  background-color: lightgray ;
+}
+
+.aboutus__ul{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+
+.aboutus__h1{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;  
+  color: #000000;
+}
+
+.aboutmore__h1{
+  font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+color: #253858;
+
+}
+
+.flex {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+
+.flex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+background: #F7F7F9;
+border-radius: 8px;
+
+ }
+
