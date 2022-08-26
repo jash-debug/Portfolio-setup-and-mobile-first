@@ -222,6 +222,10 @@ li:nth-child(1) {
   margin-bottom: 60px;
 }
 
+button {
+  transition: all 1s ease-in-out;
+}
+
 button:enabled {
   color: #6070ff;
   background: #fff;
@@ -229,6 +233,7 @@ button:enabled {
 }
 
 button:hover {
+  font-size: 20px;
   background: #6070ff;
   color: #fff;
 }
