@@ -101,8 +101,8 @@ body {
 /* projects */
 
 #project {
-  margin: 114px 0;
-  gap: 88px;
+  margin: 4em 0;
+  gap: 4em;
   display: grid;
   grid-template-columns: repeat(autofit, minmax(327px, 1fr));
   padding: 0 24px;
@@ -435,7 +435,7 @@ button:active {
   /* project section */
 
   .project {
-    margin: 0 9%;
+    margin: 0 2.5em;
     flex-direction: row;
     gap: 46px;
     padding: 24px;
@@ -452,23 +452,23 @@ button:active {
 
   .project__heading {
     padding-top: 48px;
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 52px;
   }
 
   .project__desc {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   .project__path__name {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 24px;
   }
 
   .project__path__type {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 24px;
   }
 
@@ -489,6 +489,7 @@ button:active {
   }
 
   /* about us */
+
   .aboutus {
     flex-direction: row;
     padding: 0 10%;
@@ -496,7 +497,7 @@ button:active {
   }
 
   .aboutus__desc {
-    flex: 1.5;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -508,7 +509,7 @@ button:active {
   }
 
   .aboutus__languages {
-    flex: 2;
+    flex: 1;
   }
 
   .languages {
@@ -519,12 +520,11 @@ button:active {
 
   /* contact us */
 
-  #form {
-    background-image: url(/images/contactform_bf_full.svg);
-    background-size: cover;
-  }
-
   .form__p1 {
     width: 33%;
+  }
+
+  .form__button__li {
+    align-self: center;
   }
 }
