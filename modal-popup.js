@@ -111,9 +111,12 @@ for (let i = 0; i < card.title.length; i += 1) {
 
 const popupWindow = document.querySelector('.popup');
 const main = document.querySelector('#main');
-const btn = document.querySelector('.project__button');
+const btn = document.querySelectorAll('.project__button');
 
-btn.addEventListener('click', () => {
-  popupWindow.classList.toggle('.show');
-  main.style.filter = ('blur(50px)');
-});
+for (let z=0;z<btn.length;z++){
+    btn[z].addEventListener('click', () => {
+        popupWindow.classList.toggle('.show');
+        main.style.filter = ('blur(50px)');
+      }); 
+}
+
