@@ -641,8 +641,9 @@ button:active {
   height: 50%;
   background: #000;
   opacity: 1;
-  top: 1%;
-  left: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   pointer-events: auto;
   cursor: pointer;
 }
