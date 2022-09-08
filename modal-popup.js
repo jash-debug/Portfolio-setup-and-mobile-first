@@ -108,3 +108,12 @@ for (let i = 0; i < card.title.length; i += 1) {
     article.appendChild(divCard);
     projects.appendChild(article);
 }
+
+const popupWindow = document.querySelector('.popup');
+const main = document.querySelector('#main');
+const btn = document.querySelector('.project__button');
+
+btn.addEventListener('click', () => {
+  popupWindow.classList.toggle('.show');
+  main.style.filter = ('blur(50px)');
+});

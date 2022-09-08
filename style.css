@@ -625,3 +625,24 @@ button:active {
     align-self: center;
   }
 }
+
+.popup {
+  position: fixed;
+  opacity: 0;
+  left: 0%;
+  top: 0%;
+  cursor: none;
+  pointer-events: none;
+}
+
+.popup.show {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  background: #000;
+  opacity: 1;
+  top: 1%;
+  left: 5%;
+  pointer-events: auto;
+  cursor: pointer;
+}
