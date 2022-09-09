@@ -476,6 +476,15 @@ button:active {
   border-radius: 8px;
 }
 
+.display__none {
+  display: none;
+}
+
+.red__text {
+  color: red;
+  font-size: 20px;
+}
+
 /* Media queries */
 
 .full {
