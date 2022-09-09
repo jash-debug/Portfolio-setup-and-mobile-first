@@ -290,6 +290,28 @@ li:nth-child(1) {
   color: #396df2;
 }
 
+/* Modal style */
+
+.popup {
+  position: fixed;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  cursor: none;
+  pointer-events: none;
+}
+
+.popup.show {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.order__before{
+  order: -1;
+}
+
 /* aboutus */
 
 #aboutus {
@@ -624,26 +646,9 @@ button:active {
   .form__button__li {
     align-self: center;
   }
+
+  .popup {
+    transform:translate(-50%, -50%) scale(0.5);
+  }
 }
 
-.popup {
-  position: fixed;
-  opacity: 0;
-  left: 0%;
-  top: 0%;
-  cursor: none;
-  pointer-events: none;
-}
-
-.popup.show {
-  position: fixed;
-  width: 50%;
-  height: 50%;
-  background: #000;
-  opacity: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  pointer-events: auto;
-  cursor: pointer;
-}
