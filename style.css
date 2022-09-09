@@ -302,6 +302,16 @@ li:nth-child(1) {
   pointer-events: none;
 }
 
+.projectPopup {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfd8dc;
+}
+
 .popup.show {
   opacity: 1;
   pointer-events: auto;
@@ -647,7 +657,7 @@ button:active {
     align-self: center;
   }
 
-  .popup {
+  /* .popup {
     transform: translate(-50%, -50%) scale(0.5);
-  }
+  } */
 }
