@@ -29,4 +29,3 @@ const formData = JSON.parse(localStorage.getItem('formObj'));
 fname.value = formData.fnameData;
 email.value = formData.emailData;
 messagebox.textContent = formData.messageData;
-console.log(formData);
