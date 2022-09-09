@@ -4,347 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
 </head>
 
 <body>
-    <header id="header">
-        <div class="header">
-            <a class="header__logo poppins" href="#">My Logo</a>
+    <div class="mobile__menu">
+        
+        <ul class="mobile__menu__list">
+            <li class=" nav__item "><a class="mobile__nav__link poppins" href="#">&times;</a></li>
+            <li class=" nav__item "><a class="mobile__nav__link poppins" href="#">Portfolio</a></li>
+            <li class=" nav__item "><a class="mobile__nav__link poppins" href="#project">About</a></li>
+            <li class=" nav__item"><a class="mobile__nav__link poppins" href="#project">Home</a></li>
+        </ul>
+    </div>
 
-            <img class="nav__hambuger mobile" src="images/hambuger.svg" alt="Icon">
-            <ul class="flex full nav poppins">
-                <li class="full"><a href="#project">Portfolio</a></li>
-                <li class="full"><a href="#aboutus">About</a></li>
-                <li class="full"><a href="#form">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+    <div id="main">
+        <header id="header">
 
-    <section id="hero">
-        <div class="hero">
-            <h1 class="hero__heading poppins">
-                I’m Najash<br>
-                Glad to see you!
-            </h1>
-            <p class="hero__desc poppins">
-                I’m a software developer! I can help you build a product , feature or website Look through some of my
-                work and experience! If you like what you see and have a project you need coded, don’t hestiate to
-                contact me.
-            </p>
-            <a class="hero__subtitle poppins" href="#">
-                LET’S CONNECT
-            </a>
-            <ul class="hero__social">
-                <li> <a class="hero__social__link" href="https://twitter.com/ahmed_najash"><img src="images/Twitter.svg"
-                            alt="twitter"></a></li>
-                <li> <a class="hero__social__link" href="#"><img src="images/M.svg" alt="M"></a></li>
-                <li> <a class="hero__social__link" href="https://www.linkedin.com/in/ahmed-najash-286a671ab/"><img
-                            src="images/Linkedin_icon.svg" alt="icon"></a></li>
-                <li> <a class="hero__social__link" href="https://github.com/jash-debug"><img src="images/github.svg"
-                            alt="hero"></a></li>
-                <li> <a class="hero__social__link" href="#"><img src="images/Hand.svg" alt="hand"></a></li>
-            </ul>
-        </div>
-    </section>
+            <div class="header">
+                <a class="header__logo poppins" href="#">My Logo</a>
 
-    <!-- card works -->
-    <section id="project">
-
-        <div class="project">
-
-            <img src="images/Snapshoot_Portfolio.svg" class="mobile" alt="project">
-            <img src="images/Snapshoot_Portfolio_full.svg" class="full" alt="project">
-
-            <div>
-                <h1 class="project__heading poppins">
-                    Tonic
-                </h1>
-
-                <ul class="project__path poppins">
-                    <li class="project__path__name poppins">CANOPY</li>
-                    <li class="project__path__type poppins">BACK END DEV</li>
-                    <li class="project__path__type poppins">2015</li>
+                <ul class="flex full nav poppins">
+                    <li class="full nav__item"><a class="nav__link" href="#project">Portfolio</a></li>
+                    <li class="full nav__item"><a class="nav__link" href="#project">About</a></li>
+                    <li class="full nav__item"><a class="nav__link" href="#project">Home</a></li>
                 </ul>
 
-                <p class="project__desc poppins">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-
-                <ul class="project__language">
-                    <li class="poppins">html</li>
-                    <li class="poppins">css</li>
-                    <li class="poppins">javaScript</li>
-                </ul>
-
-                <div>
-                    <button type='button' class="project__button poppins">
-                        see Project
-                    </button>
+                <div class="hamburger mobile">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
+
+
+
             </div>
+        </header>
 
-        </div>
-
-        <div class="project">
-
-            <img src="images/multipost_stories.svg" class="mobile" alt="project">
-            <img src="images/professional_printing_full.svg" class="full reverse" alt="project">
-
-            <div>
-                <h1 class="project__heading poppins">
-                    Multi-Post Stories
-                </h1>
-
-                <ul class="project__path mobile poppins">
-                    <li class="project__path__name poppins">CANOPY</li>
-                    <li class="project__path__type poppins">BACK END DEV</li>
-                    <li class="project__path__type poppins">2015</li>
-                </ul>
-
-                <ul class="project__path poppins full">
-                    <li class="project__path__name poppins">FACEBOOK</li>
-                    <li class="project__path__type poppins">Full Stack Dev</li>
-                    <li class="project__path__type poppins">2015</li>
-                </ul>
-
-                <p class="project__desc poppins">
-                    <span class="mobile">A daily selection of privately personalized reads; no accounts or sign-ups
-                        required.</span>
-                    <span class="full">Experimental content creation feature that allows users to add to an existing
-                        story over the course of a day without spamming their friends.</span>
-                </p>
-
-                <ul class="project__language">
-                    <li class="poppins">html</li>
-                    <li class="poppins full">Ruby on rails</li>
-                    <li class="poppins">css</li>
-                    <li class="poppins">javaScript</li>
-                </ul>
-
-                <div>
-                    <button type='button' class="project__button poppins">
-                        see Project
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="project">
-
-            <img src="images/yoga_app.svg" class="mobile" alt="project">
-            <img src="images/Snapshoot_Portfolio.svg" class="full" alt="project">
-
-
-
-            <div>
-                <h1 class="project__heading poppins">
-                    <span class="mobile">Tonic</span>
-                    <span class="full">Facebook 360</span>
-                </h1>
-
-                <ul class="project__path mobile poppins">
-                    <li class="project__path__name poppins">CANOPY</li>
-                    <li class="project__path__type poppins">BACK END DEV</li>
-                    <li class="project__path__type poppins">2015</li>
-                </ul>
-
-                <ul class="project__path poppins full">
-                    <li class="project__path__name poppins">FACEBOOK</li>
-                    <li class="project__path__type poppins">Full Stack Dev</li>
-                    <li class="project__path__type poppins">2015</li>
-                </ul>
-
-                <p class="project__desc poppins">
-                    <span class="mobile">A daily selection of privately personalized reads; no accounts or sign-ups
-                        required.</span>
-                    <span class="full">Exploring the future of media in Facebook's first Virtual Reality app; a place to
-                        discover and enjoy 360 photos and videos on Gear VR.</span>
-                </p>
-
-                <ul class="project__language">
-                    <li class="poppins">html</li>
-                    <li class="poppins full">Ruby on rails</li>
-                    <li class="poppins">css</li>
-                    <li class="poppins">javaScript</li>
-                </ul>
-
-                <div>
-                    <button type='button' class="project__button poppins">
-                        see Project
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="project">
-
-            <img src="images/professional_printing.svg" class="mobile" alt="project">
-            <img src="images/multipost_stories.svg" class="full reverse" alt="project">
-
-            <div>
-                <h1 class="project__heading poppins">
-                    <span class="mobile">Tonic</span>
-                    <span class="full">Uber Navigation</span>
-                </h1>
-
-                <ul class="project__path mobile poppins">
-                    <li class="project__path__name poppins">CANOPY</li>
-                    <li class="project__path__type poppins">BACK END DEV</li>
-                    <li class="project__path__type poppins">2015</li>
-                </ul>
-
-                <ul class="project__path poppins full">
-                    <li class="project__path__name poppins">Uber</li>
-                    <li class="project__path__type poppins">Lead Developer</li>
-                    <li class="project__path__type poppins">2018</li>
-                </ul>
-
-                <p class="project__desc poppins">
-                    <span class="mobile">A daily selection of privately personalized reads; no accounts or sign-ups
-                        required.</span>
-                    <span class="full">A smart assistant to make driving more safe, efficient, and fun by unlocking your
-                        most expensive computer: your car.</span>
-                </p>
-
-                <ul class="project__language">
-                    <li class="poppins">html</li>
-                    <li class="poppins full">Ruby on rails</li>
-                    <li class="poppins">css</li>
-                    <li class="poppins">javaScript</li>
-                </ul>
-
-                <div>
-                    <button type='button' class="project__button poppins">
-                        see Project
-                    </button>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- about us -->
-    <section id="aboutus">
-        <div class="aboutus">
-            <div class="aboutus__desc">
-                <h1 class="aboutus__heading poppins">
-                    About<br>
-                    Myself
-                </h1>
-                <p class="aboutus__desc padding poppins">
-                    Hello I’m a software developer! I can help you build a product , feature or website Look through
-                    some of
-                    my work and experience! If you like what you see and have a project you need coded, don’t hestiate
-                    to
+        <section id="hero">
+            <div class="hero">
+                <h2 class="hero__heading poppins">
+                    I’m Najash<br>
+                    Glad to see you!
+                </h2>
+                <p class="hero__desc poppins">
+                    I’m a software developer! I can help you build a product , feature or website Look through some of
+                    my
+                    work and experience! If you like what you see and have a project you need coded, don’t hestiate to
                     contact me.
                 </p>
-                <a class="aboutus__subtitle poppins" href="#">
+                <a class="hero__subtitle poppins" href="#">
                     LET’S CONNECT
                 </a>
-                <ul class="aboutus__social">
-                    <li> <a class="aboutus__social__link" href="https://twitter.com/ahmed_najash"><img
+                <ul class="hero__social">
+                    <li> <a class="hero__social__link" href="https://twitter.com/ahmed_najash"><img
                                 src="images/Twitter.svg" alt="twitter"></a></li>
-                    <li> <a class="aboutus__social__link" href="#"><img src="images/M.svg" alt="M"></a></li>
-                    <li> <a class="aboutus__social__link"
-                            href="https://www.linkedin.com/in/ahmed-najash-286a671ab/"><img
+                    <li> <a class="hero__social__link" href="#"><img src="images/M.svg" alt="M"></a></li>
+                    <li> <a class="hero__social__link" href="https://www.linkedin.com/in/ahmed-najash-286a671ab/"><img
                                 src="images/Linkedin_icon.svg" alt="icon"></a></li>
-                    <li> <a class="aboutus__social__link" href="https://github.com/jash-debug"><img
-                                src="images/github.svg" alt="social_link"></a></li>
-                    <li> <a class="aboutus__social__link" href="#"><img src="images/Hand.svg" alt="hand"></a></li>
+                    <li> <a class="hero__social__link" href="https://github.com/jash-debug"><img src="images/github.svg"
+                                alt="hero"></a></li>
+                    <li> <a class="hero__social__link" href="#"><img src="images/Hand.svg" alt="hand"></a></li>
                 </ul>
-                <div>
-                    <button type='button' class="aboutus__button poppins">
-                        see Project
-                    </button>
+            </div>
+        </section>
+
+        <!-- card works -->
+        <section id="project">
+        </section>
+
+        <!-- about us -->
+        <section id="aboutus">
+            <div class="aboutus">
+                <div class="aboutus__desc">
+                    <h2 class="aboutus__heading poppins">
+                        About<br>
+                        Myself
+                    </h2>
+                    <p class="aboutus__desc padding poppins">
+                        Hello I’m a software developer! I can help you build a product , feature or website Look through
+                        some of
+                        my work and experience! If you like what you see and have a project you need coded, don’t
+                        hestiate
+                        to
+                        contact me.
+                    </p>
+                    <a class="aboutus__subtitle poppins" href="#">
+                        LET’S CONNECT
+                    </a>
+                    <ul class="aboutus__social">
+                        <li> <a class="aboutus__social__link" href="https://twitter.com/ahmed_najash"><img
+                                    src="images/Twitter.svg" alt="twitter"></a></li>
+                        <li> <a class="aboutus__social__link" href="#"><img src="images/M.svg" alt="M"></a></li>
+                        <li> <a class="aboutus__social__link"
+                                href="https://www.linkedin.com/in/ahmed-najash-286a671ab/"><img
+                                    src="images/Linkedin_icon.svg" alt="icon"></a></li>
+                        <li> <a class="aboutus__social__link" href="https://github.com/jash-debug"><img
+                                    src="images/github.svg" alt="social_link"></a></li>
+                        <li> <a class="aboutus__social__link" href="#"><img src="images/Hand.svg" alt="hand"></a></li>
+                    </ul>
+                    <div>
+                        <button type='button' class="aboutus__button poppins">
+                            see Project
+                        </button>
+                    </div>
+
                 </div>
 
+                <div class="aboutus__languages">
+                    <ul class="about_more">
+                        <li class="flex">
+                            <h2 class="aboutus__h1 poppins">Languages</h2>
+                            <img src="./images/aboutus__languages.svg" alt="union">
+                        </li>
+
+                        <li class="none">
+                            <ul class="about_more languages">
+                                <li class="flex2">
+                                    <img src="./images/Javascript.SVG" alt="union">
+                                    <h2 class="aboutmore__h1 poppins">javaScript</h2>
+
+                                </li>
+                                <li class="flex2">
+                                    <img src="./images/Css.svg" alt="union">
+                                    <h2 class="aboutmore__h1 poppins">HTML</h2>
+
+                                </li>
+                                <li class="flex2">
+                                    <img src="./images/html5.svg" alt="union">
+                                    <h2 class="aboutmore__h1 poppins">CSS</h2>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class="flex">
+                            <h2 class="aboutus__h1 poppins">Frameworks</h2>
+                            <img src="./images/aboutus.svg" alt="union">
+                        </li>
+                        <li class="none">
+                            <img class="line" src="./images/Separator_Bottom.svg" alt="separator_bottom">
+                        </li>
+
+                        <li class="flex">
+                            <h2 class="aboutus__h1 poppins">Skills</h2>
+                            <img src="./images/aboutus.svg" alt="union">
+                        </li>
+                        <li class="none">
+                            <img class="line" src="./images/Separator_Bottom.svg" alt="separator_bottom">
+                        </li>
+
+                    </ul>
+                </div>
             </div>
+        </section>
 
-            <div class="aboutus__languages">
-                <ul class="about_more">
-                    <li class="flex">
-                        <h1 class="aboutus__h1 poppins">Languages</h1>
-                        <img src="./images/aboutus__languages.svg" alt="union">
-                    </li>
-
-                    <li class="none">
-                        <ul class="about_more languages">
-                            <li class="flex2">
-                                <img src="./images/Javascript.SVG" alt="union">
-                                <h1 class="aboutmore__h1 poppins">javaScript</h1>
-
-                            </li>
-                            <li class="flex2">
-                                <img src="./images/Css.svg" alt="union">
-                                <h1 class="aboutmore__h1 poppins">HTML</h1>
-
-                            </li>
-                            <li class="flex2">
-                                <img src="./images/html5.svg" alt="union">
-                                <h1 class="aboutmore__h1 poppins">CSS</h1>
-                            </li>
-                        </ul>
-
-                    </li>
-
-                    <li class="flex">
-                        <h1 class="aboutus__h1 poppins">Frameworks</h1>
-                        <img src="./images/aboutus.svg" alt="union">
-                    </li>
-                    <li class="none">
-                        <img class="line" src="./images/Separator_Bottom.svg" alt="separator_bottom">
-                    </li>
-
-                    <li class="flex">
-                        <h1 class="aboutus__h1 poppins">Skills</h1>
-                        <img src="./images/aboutus.svg" alt="union">
-                    </li>
-                    <li class="none">
-                        <img class="line" src="./images/Separator_Bottom.svg" alt="separator_bottom">
-                    </li>
-
-                </ul>
+        <!-- Contact form  -->
+        <section id="form">\
+            <div class="form">
+                <h2 class="form__h1 poppins">
+                    Contact me
+                </h2>
+                <p class="form__p1 poppins">
+                    If you have an application you are interested in developing, a feature that you need built or a
+                    project
+                    that needs coding. I’d love to help with it
+                </p>
+                <form id="form__id" action="https://formspree.io/f/xpznwqll" method="post">
+                    <ul class="form__list">
+                        <li class="form__list1">
+                            <input class="poppins form__list__style" name="name" type="text" id="Firstname"
+                                placeholder="Najash" maxlength="30" required />
+                        </li>
+                        <li>
+                            <input class="poppins form__list__style" type="email" name="email" id="email"
+                                placeholder="email@something.com" required />
+                        </li>
+                        <li><span class="display__none red__text">Please Make the email lowercase</span></li>
+                        <li class="form__list2">
+                            <textarea class="poppins form__list__style" name="textarea__form" id="textarea__form"
+                                cols="30" rows="10" maxlength="500" placeholder="Write your message here"
+                                required></textarea>
+                        </li>
+                        <li class="form__button__li">
+                            <button type="submit" class="form__button poppins">Get In Touch</button>
+                        </li>
+                    </ul>
+                </form>
             </div>
-        </div>
+        </section>
+    </div>
+
+    <section class="popup">
+        
     </section>
 
-    <!-- Contact form  -->
-    <section id="form">\
-        <div class="form">
-            <h1 class="form__h1 poppins">
-                Contact me
-            </h1>
-            <p class="form__p1 poppins">
-                If you have an application you are interested in developing, a feature that you need built or a project
-                that needs coding. I’d love to help with it
-            </p>
-            <form action="https://formspree.io/f/xpznwqll" method="post">
-                <ul class="form__list">
-                    <li class="form__list1">
-                        <input class="poppins form__list__style" name="name" type="text" id="Firstname"
-                            placeholder="Najash" maxlength="30" required />
-                    </li>
-                    <li>
-                        <input class="poppins form__list__style" type="email" name="email" id="email"
-                            placeholder="email@something.com" required />
-                    </li>
-                    <li class="form__list2">
-                        <textarea class="poppins form__list__style" name="textarea__form" id="textarea__form" cols="30"
-                            rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
-                    </li>
-                    <li class="form__button__li">
-                        <button type="submit" class="form__button poppins">Get In Touch</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </section>
+
+    <script src="./nav-menu.js"></script>
+    <script src="./modal-popup.js"></script>
+    <script src="./popup.js"></script>
+    <script src="./validation-form.js"></script>
 </body>
 
 </html>
