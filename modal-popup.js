@@ -1,11 +1,12 @@
 const card = {
-    imge: ['images/Snapshoot_Portfolio.svg','images/multipost_stories.svg','images/yoga_app.svg','images/professional_printing.svg'],
-    imge_full: ['images/Snapshoot_Portfolio_full.svg','images/professional_printing_full.svg','images/Snapshoot_Portfolio.svg','images/multipost_stories.svg'],
+    imge: ['images/Snapshoot_Portfolio.svg', 'images/multipost_stories.svg', 'images/yoga_app.svg', 'images/professional_printing.svg'],
+    imge_full: ['images/Snapshoot_Portfolio_full.svg', 'images/professional_printing_full.svg', 'images/Snapshoot_Portfolio.svg', 'images/multipost_stories.svg'],
     title: ['Tonic', 'Multi-Post Stories', 'Tonic', 'Tonic'],
     title_f: ['Tonic', 'Multi-Post Stories', 'Facebook 360', 'Uber navigation'],
     path: [['CANOPY', 'BACK END DEV', '2015'], ['CANOPY', 'BACK END DEV', '2015'], ['CANOPY', 'BACK END DEV', '2015'], ['CANOPY', 'BACK END DEV', '2015']],
     path_f: [['CANOPY', 'BACK END DEV', '2015'], ['FACEBOOK', 'Full Stack Dev', '2015'], ['FACEBOOK', 'Full Stack Dev', '2015'], ['Uber', 'Lead Developer', '2018']],
     description: ['A daily selection of privately personalized reads; no accounts or sign-ups required', 'A daily selection of privately personalized reads; no accounts or sign-ups required', 'A daily selection of privately personalized reads; no accounts or sign-ups required', 'A daily selection of privately personalized reads; no accounts or sign-ups required'],
+    description_f: ['A daily selection of privately personalized reads; no accounts or sign-ups required', 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.', 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.', 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.'],
     languages: [['html', 'css', 'javaScript'], ['html', 'css', 'javaScript'], ['html', 'css', 'javaScript'], ['html', 'css', 'javaScript']],
     languages_f: [['html', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript']],
 }
@@ -32,7 +33,10 @@ for (let i = 0; i < card.title.length; i += 1) {
     const innerDiv = document.createElement('div');
 
     const languages = document.createElement('ul');
-    languages.className = 'project__language';
+    languages.className = 'project__language mobile';
+
+    const languages_f = document.createElement('ul');
+    languages_f.className = 'project__language full';
 
     const title = document.createElement('h2');
     const textTitle = document.createTextNode(card.title[i]);
@@ -54,8 +58,13 @@ for (let i = 0; i < card.title.length; i += 1) {
 
     const paragraph = document.createElement('p');
     const desc = document.createTextNode(card.description[i]);
-    paragraph.className = 'project__desc poppins'
+    paragraph.className = 'project__desc mobile poppins'
     paragraph.appendChild(desc);
+
+    const paragraph_f = document.createElement('p');
+    const desc_f = document.createTextNode(card.description_f[i]);
+    paragraph_f.className = 'project__desc full poppins'
+    paragraph_f.appendChild(desc_f);
 
     for (let j = 0; j < x.length; j += 1) {
         const li = document.createElement('li');
@@ -89,6 +98,14 @@ for (let i = 0; i < card.title.length; i += 1) {
         languages.appendChild(li);
     }
 
+    const p_language_f = card.languages_f[i];
+    for (let j = 0; j < p_language_f.length; j += 1) {
+        const li = document.createElement('li');
+        li.className = 'poppins';
+        li.innerText = p_language_f[j];
+        languages_f.appendChild(li);
+    }
+
 
     const button = document.createElement('button');
     button.className = 'project__button poppins';
@@ -103,20 +120,10 @@ for (let i = 0; i < card.title.length; i += 1) {
     divCard.appendChild(path);
     divCard.appendChild(path_f);
     divCard.appendChild(paragraph);
+    divCard.appendChild(paragraph_f);
     divCard.appendChild(languages);
+    divCard.appendChild(languages_f);
     divCard.appendChild(innerDiv);
     article.appendChild(divCard);
     projects.appendChild(article);
 }
-
-const popupWindow = document.querySelector('.popup');
-const main = document.querySelector('#main');
-const btn = document.querySelectorAll('.project__button');
-
-for (let z=0;z<btn.length;z++){
-    btn[z].addEventListener('click', () => {
-        popupWindow.classList.toggle('.show');
-        main.style.filter = ('blur(50px)');
-      }); 
-}
-
