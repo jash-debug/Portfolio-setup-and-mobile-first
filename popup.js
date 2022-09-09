@@ -27,7 +27,7 @@ btn.forEach((button, i) => {
     main.style.filter = ('blur(50px)');
 
     const article = document.createElement('article');
-    article.className = 'project';
+    article.className = 'projectPopup';
     const images = document.createElement('img');
     images.src = card2.imge[i];
     images.className = 'mobile';
@@ -38,6 +38,7 @@ btn.forEach((button, i) => {
     const projectDiv = document.createElement('div');
 
     const innerDiv = document.createElement('div');
+    innerDiv.className = 'flex';
 
     const languages = document.createElement('ul');
     languages.className = 'project__language';
@@ -105,7 +106,13 @@ btn.forEach((button, i) => {
     button.innerText = 'See Project';
     button.href = '#';
 
+    const button2 = document.createElement('button');
+    button2.className = 'project__button poppins';
+    button2.innerText = 'See Project';
+    button2.href = '#';
+
     innerDiv.appendChild(button);
+    innerDiv.appendChild(button2);
     projectDiv.appendChild(close);
     projectDiv.appendChild(title);
     projectDiv.appendChild(titleF);
@@ -123,7 +130,7 @@ btn.forEach((button, i) => {
 
 document.querySelectorAll('.popup').forEach(
   (n) => n.addEventListener('click', () => {
-    window.location.reload();
+    popupWindow.innerText='';
     popupWindow.classList.remove('show');
     main.removeAttribute('style');
   }),
