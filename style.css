@@ -30,6 +30,33 @@ body {
   width: 100%;
 }
 
+button {
+  transition: all 1s ease-in-out;
+}
+
+button:enabled {
+  color: #6070ff;
+  background: #fff;
+  border: 1px solid #7f8cff;
+}
+
+button:hover {
+  font-size: 20px;
+  background: #6070ff;
+  color: #fff;
+}
+
+button:disabled {
+  color: #5e6c84;
+  background: #e5e5e5;
+  border: 1px solid #5e6c84;
+}
+
+button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
 /* Header Section */
 
 #header {
@@ -207,6 +234,53 @@ body {
   border-radius: 16px;
 }
 
+.card__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  width: 95vw;
+  height: 85vh;
+  transform: scale(0.9);
+  padding: 5px 6%;
+  overflow-y: scroll;
+  border-radius: 20px;
+}
+
+.button__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph__div {
+  flex: 2.7;
+}
+
+.span {
+  width: 100%;
+  background: #ebecf0;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.innerDiv {
+  flex: 1;
+}
+
+.close__button {
+  background: none;
+  color: #7a869a !important;
+  border: none !important;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.close__button:hover {
+  background: none;
+}
+
 .project > div {
   display: flex;
   flex-direction: column;
@@ -330,33 +404,6 @@ li:nth-child(1) {
 
 .aboutus__button {
   margin-bottom: 60px;
-}
-
-button {
-  transition: all 1s ease-in-out;
-}
-
-button:enabled {
-  color: #6070ff;
-  background: #fff;
-  border: 1px solid #7f8cff;
-}
-
-button:hover {
-  font-size: 20px;
-  background: #6070ff;
-  color: #fff;
-}
-
-button:disabled {
-  color: #5e6c84;
-  background: #e5e5e5;
-  border: 1px solid #5e6c84;
-}
-
-button:active {
-  background: #2230d2;
-  color: #fff;
 }
 
 .aboutus__ul {
@@ -526,6 +573,23 @@ button:active {
     margin-top: 50px;
   }
 
+  .card__container {
+    width: 90vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+  }
+
+  @media only screen and (min-height: 1100px) {
+    .card__container {
+      height: auto;
+    }
+  }
+
+  .space {
+    gap: 50px;
+  }
+
   .hero__heading {
     font-size: 48px;
     line-height: 60px;
@@ -654,9 +718,5 @@ button:active {
 
   .form__button__li {
     align-self: center;
-  }
-
-  .popup {
-    transform: translate(-50%, -50%) scale(0.5);
   }
 }
