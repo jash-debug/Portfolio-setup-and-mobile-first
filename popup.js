@@ -8,7 +8,7 @@ const card2 = {
   description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent', 'Description2', 'Description3', 'Description3'],
   descriptionF: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea', 'Description2', 'Description3', 'Description3'],
   languages: [['html', 'css', 'javaScript'], ['html', 'css', 'javaScript'], ['html', 'css', 'javaScript'], ['html', 'css', 'javaScript']],
-    languages_f: [['html', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript']],
+  languages_f: [['html', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript'], ['html', 'Ruby on rails', 'css', 'javaScript']],
 };
 
 const popupWindow = document.querySelector('.popup');
@@ -38,7 +38,7 @@ btn.forEach((button, i) => {
 
     const imagesLive = document.createElement('img');
     imagesLive.src = './images/seeLive.svg';
-    
+
     const imagesLive2 = document.createElement('img');
     imagesLive2.src = './images/githubBlue.svg';
 
@@ -141,13 +141,12 @@ btn.forEach((button, i) => {
     button2.innerText = 'See Project';
     button2.href = '#';
 
-
-    buttonDiv.appendChild(button)
-    buttonDiv.appendChild(imagesLive)
+    buttonDiv.appendChild(button);
+    buttonDiv.appendChild(imagesLive);
     innerDiv.appendChild(buttonDiv);
 
-    buttonDiv2.appendChild(button2)
-    buttonDiv2.appendChild(imagesLive2)
+    buttonDiv2.appendChild(button2);
+    buttonDiv2.appendChild(imagesLive2);
     innerDiv.appendChild(buttonDiv2);
 
     innerDiv2.appendChild(title);
@@ -165,7 +164,7 @@ btn.forEach((button, i) => {
     article.appendChild(projectDiv);
     popupWindow.appendChild(article);
 
-    if (window.screen.width >768) {
+    if (window.screen.width > 768) {
       desktopDiv.appendChild(paragraphF);
       desktopDiv3.appendChild(desktopDiv);
       desktopDiv2.appendChild(languages);
@@ -174,7 +173,6 @@ btn.forEach((button, i) => {
       desktopDiv3.appendChild(desktopDiv2);
       projectDiv.appendChild(desktopDiv3);
       article.appendChild(projectDiv);
-
     }
   });
 });
