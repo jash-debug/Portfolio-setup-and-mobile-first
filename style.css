@@ -376,17 +376,6 @@ li:nth-child(1) {
   pointer-events: none;
 }
 
-/*
-.projectPopup {
-  display: flex;
-  flex-direction: column;
-  width: 95vw;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  background-color: #cfd8dc;
-} */
-
 .popup.show {
   opacity: 1;
   pointer-events: auto;
@@ -721,8 +710,4 @@ li:nth-child(1) {
   .form__button__li {
     align-self: center;
   }
-
-  /* .popup {
-    transform: translate(-50%, -50%) scale(0.5);
-  } */
 }

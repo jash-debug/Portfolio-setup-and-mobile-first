@@ -15,13 +15,6 @@ const popupWindow = document.querySelector('.popup');
 const main = document.querySelector('#main');
 const btn = document.querySelectorAll('.project__button');
 
-// for (z = 0; z < btn.length; z++) {
-//     btn[z].addEventListener('click', () => {
-//         popupWindow.classList.toggle('show');
-//         // main.style.filter = ('blur(50px)');
-//     });
-// }
-
 btn.forEach((button, i) => {
   button.addEventListener('click', () => {
     popupWindow.classList.toggle('show');
